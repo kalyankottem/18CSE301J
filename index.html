@@ -16,7 +16,6 @@
             padding: 10px 0;
         }
         .container {
-            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -38,10 +37,33 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        .gephi-img{
+            max-height: 600px;
+        }
+        .picscontainer{
+            display: flex;
+        }
+        .visualization-2{
+            height: 600px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .for-flexing{
+            display: flex;
+        }
+        .top-element{
+        background: hsla(41, 100%, 70%, 1);
+        background: linear-gradient(0deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCF67", endColorstr="#D3321D", GradientType=1 );
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="top-element">
         <h1>Project Showcase</h1>
     </header>
     <div class="container">
@@ -55,18 +77,27 @@
             <!-- Embedded Tableau Dashboard -->
             <h2>Tableau Dashboard</h2>
             <p>Explore our Tableau visualization:</p>
-            <div class='tableauPlaceholder' id='viz1693162626145' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ap&#47;AppusageAcrossDaysoftheweek&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AppusageAcrossDaysoftheweek&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ap&#47;AppusageAcrossDaysoftheweek&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1693162626145');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="picscontainer">
+                <div class='tableauPlaceholder' id='viz1693162626145' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ap&#47;AppusageAcrossDaysoftheweek&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AppusageAcrossDaysoftheweek&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ap&#47;AppusageAcrossDaysoftheweek&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1693162626145');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='760px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class="img">hi</div>
+            </div>
+            
             <script type='text/javascript'>
                 // Tableau Embed Script
             </script>
         </div>
-        <div class="visualization">
-            <!-- Image in place of Gephi Visualization -->
-            <h2>Gephi</h2>
-            <p>Here's a static image:</p>
-            <img src="./Untitled.png" alt="Static Gephi Image" width="100%" />
+       <div class="visualization for-flexing">
+        <div class="left">
+            <h1>gephi</h1>
+            <p>Take a look at our visualization</p>
+            <img src="./Untitled.png" class="gephi-img"></img>
         </div>
-        <div class="research-paper">
+        <div class="right">
+            hi
+        </div>
+        
+       </div>
+        <div class="research-paper visualization">
             <h2>Research Paper</h2>
             <p>For in-depth insights into our project, you can refer to our <a href="./research_paper.pdf">research paper</a>.</p>
         </div>
